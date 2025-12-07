@@ -1,4 +1,5 @@
 # Uncomment the imports below before you add the function code
+# pylint: max-line-length=120
 import requests
 import os
 from dotenv import load_dotenv
