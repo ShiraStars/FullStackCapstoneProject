@@ -31,7 +31,6 @@ jobs:
 
     - name: Run Linter
       run: |
-        pylint --max-line-length=124 $/home/project/FullStackCapstoneProject/server/djangoapp/restapis.py
         pwd
         # This command finds all Python files recursively and runs flake8 on them
         find . -name "*.py" -exec flake8 {} +
