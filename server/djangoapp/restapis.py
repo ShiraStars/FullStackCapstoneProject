@@ -1,16 +1,17 @@
 # Uncomment the imports below before you add the function code
-# pylint: max-line-length=120
 import requests
 import os
 from dotenv import load_dotenv
 
 load_dotenv()
 
+# pylint: disable=line-too-long
 backend_url = os.getenv(
     'backend_url', default="https://skrikvirnick-3030.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai")
 sentiment_analyzer_url = os.getenv(
     'sentiment_analyzer_url',
     default="http://localhost:5050/")
+# pylint: enable=line-too-long
 
 # def get_request(endpoint, **kwargs):
 # Add code for get requests to back end
